@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TextField fx:id="talDisplay" rotate="12.1" style="-fx-border-color: blue;">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <Button fx:id="plusButton" mnemonicParsing="false" onAction="#plusMetode" text="+" GridPane.rowIndex="1" />
+      <Button fx:id="equalsButton" mnemonicParsing="false" onAction="#equalsMetode" text="=" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" text="Button" GridPane.rowIndex="3" />
+   </children>
+</GridPane>
