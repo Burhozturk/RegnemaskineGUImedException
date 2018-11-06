@@ -36,6 +36,7 @@ public class Controller {
 
         System.out.println(s + " er nu tilføjet. ");
 
+        // Dette er et eksempel på EXCEPTIONS i java (try-catch)
         try {
             // Lægger alle tal sammen i arrayet
             for (String number : numbersArray) {
@@ -43,11 +44,13 @@ public class Controller {
                 resultat += Integer.parseInt(number);
             }
         }
+        // Fanger kun NumberFormatExceptions
         catch (NumberFormatException e) {
             System.out.println("Obs NumberFormatException" + e.getCause() + e.getMessage());
         }
+        // Fanger alle exceptions
         catch (Exception e) {
-
+            System.out.println("Uforudset Exception" + e.getCause() + e.getMessage() + e.getClass());
         }
 
         System.out.println("Det virker endnu");
